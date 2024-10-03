@@ -1,0 +1,9 @@
+## macOS
+.DS_Store
+
+## User settings
+xcuserdata/
+**/*.xcuserdata/
+
+## SPM
+**/*.swiftpm/
