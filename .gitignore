@@ -6,4 +6,4 @@ xcuserdata/
 **/*.xcuserdata/
 
 ## SPM
-**/*.swiftpm/
+**/*.xcworkspace/

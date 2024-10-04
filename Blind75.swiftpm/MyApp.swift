@@ -13,8 +13,8 @@ struct MyApp: App {
 
     init() {
         let solution = Solution()
-        solution.testLongestConsecutive()
-        
+//        solution.testLongestConsecutive()
+        solution.testMergeTwoLists()
     }
 }
 
