@@ -14,7 +14,8 @@ struct MyApp: App {
     init() {
         let solution = Solution()
 //        solution.testLongestConsecutive()
-        solution.testMergeTwoLists()
+//        solution.testMergeTwoLists()
+        solution.testTopKFrequent()
     }
 }
 
