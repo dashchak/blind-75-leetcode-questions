@@ -9,15 +9,15 @@ import Foundation
 
 
 struct Heap<T> {
-    var nodes = [T]()
-    let compareFunc: (T,T) -> Bool
+    private var arr = [T]()
+    private let compareFunc: (T,T) -> Bool
 
     init(_ compareFunc: @escaping (T,T) -> Bool ) {
         self.compareFunc = compareFunc
     }
 
     var size: Int {
-        return nodes.count
+        return arr.count
     }
 
     mutating func insert(contentsOf: [T]) {
@@ -25,27 +25,31 @@ struct Heap<T> {
     }
 
     mutating func insert(_ elem: T) {
-        nodes.append(elem)
+        arr.append(elem)
         bubbleUp(size-1)
     }
 
     @discardableResult
     mutating func extract() -> T? {
         if size == 0 { return nil }
-        if size == 1 { return nodes.removeLast() }
+        if size == 1 { return arr.removeLast() }
 
-        nodes.swapAt(0, size-1)
-        let res = nodes.removeLast()
+        arr.swapAt(0, size-1)
+        let res = arr.removeLast()
         bubbleDown(0)
         return res
+    }
+    
+    func peek() -> T? {
+        return arr.first
     }
 
     private mutating func bubbleUp(_ index: Int) {
         let parentIndex = parentIndex(index)
         if parentIndex == -1 { return }
 
-        if compareFunc(nodes[index], nodes[parentIndex]) {
-            nodes.swapAt(parentIndex, index)
+        if compareFunc(arr[index], arr[parentIndex]) {
+            arr.swapAt(parentIndex, index)
             bubbleUp(parentIndex)
         }
     }
@@ -54,8 +58,8 @@ struct Heap<T> {
         let childIndex = childIndexToSwap(index)
         if childIndex == -1 { return }
 
-        if compareFunc(nodes[childIndex], nodes[index]) {
-            nodes.swapAt(childIndex, index)
+        if compareFunc(arr[childIndex], arr[index]) {
+            arr.swapAt(childIndex, index)
             bubbleDown(childIndex)
         }
     }
@@ -67,7 +71,7 @@ struct Heap<T> {
         let r = rightChildIndex(index)
         if r >= size { return l }
 
-        return compareFunc(nodes[l], nodes[r]) ? l : r
+        return compareFunc(arr[l], arr[r]) ? l : r
     }
 
     private func parentIndex(_ index: Int) -> Int {
