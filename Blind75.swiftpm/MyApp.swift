@@ -17,6 +17,7 @@ struct MyApp: App {
         solution.testMergeTwoLists()
         solution.testTopKFrequent()
         solution.testCanFinish()
+        solution.testValidTree()
     }
 }
 
