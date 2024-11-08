@@ -18,6 +18,7 @@ struct MyApp: App {
         solution.testTopKFrequent()
         solution.testCanFinish()
         solution.testValidTree()
+        solution.testTrie()
     }
 }
 
