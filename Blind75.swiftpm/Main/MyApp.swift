@@ -19,6 +19,7 @@ struct MyApp: App {
         solution.testCanFinish()
         solution.testValidTree()
         solution.testTrie()
+        solution.testSearch()
     }
 }
 
