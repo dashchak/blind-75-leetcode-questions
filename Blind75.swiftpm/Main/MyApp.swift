@@ -20,6 +20,7 @@ struct MyApp: App {
         solution.testValidTree()
         solution.testTrie()
         solution.testSearch()
+        solution.testFindMin()
     }
 }
 
