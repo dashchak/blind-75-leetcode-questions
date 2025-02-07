@@ -21,6 +21,8 @@ struct MyApp: App {
         solution.testTrie()
         solution.testSearch()
         solution.testFindMin()
+        solution.testMissingNumber1()
+        solution.testMissingNumber2()
     }
 }
 
