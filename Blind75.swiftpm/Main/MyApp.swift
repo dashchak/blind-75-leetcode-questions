@@ -23,6 +23,7 @@ struct MyApp: App {
         solution.testFindMin()
         solution.testMissingNumber1()
         solution.testMissingNumber2()
+        solution.testGetSum()
     }
 }
 
