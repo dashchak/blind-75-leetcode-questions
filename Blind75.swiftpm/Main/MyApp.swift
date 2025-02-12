@@ -24,6 +24,8 @@ struct MyApp: App {
         solution.testMissingNumber1()
         solution.testMissingNumber2()
         solution.testGetSum()
+        solution.testHammingWeight1()
+        solution.testHammingWeight2()
     }
 }
 
