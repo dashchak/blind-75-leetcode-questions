@@ -26,6 +26,7 @@ struct MyApp: App {
         solution.testGetSum()
         solution.testHammingWeight1()
         solution.testHammingWeight2()
+        solution.testMaxPathSum()
     }
 }
 
