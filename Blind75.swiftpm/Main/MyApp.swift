@@ -27,6 +27,8 @@ struct MyApp: App {
         solution.testHammingWeight1()
         solution.testHammingWeight2()
         solution.testMaxPathSum()
+        solution.testIsSameTree1()
+        solution.testIsSameTree2()
     }
 }
 
