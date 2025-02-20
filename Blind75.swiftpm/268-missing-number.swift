@@ -68,13 +68,17 @@ extension Solution {
         let nums = [3,0,1]
         let result = missingNumber1(nums)
         print(result)
-        assert(result == 2)
+
+        let expectedResult = 2
+        assert(result == expectedResult)
     }
 
     func testMissingNumber2() {
         let nums = [0,1]
         let result = missingNumber2(nums)
         print(result)
-        assert(result == 2)
+
+        let expectedResult = 2
+        assert(result == expectedResult)
     }
 }

@@ -53,6 +53,8 @@ extension Solution {
         let nums = [1,1,1,2,2,3]
         let result = topKFrequent(nums, 2)
         print(result)
-        assert(result == [2,1])
+
+        let expectedResult = [2,1]
+        assert(result == expectedResult)
     }
 }

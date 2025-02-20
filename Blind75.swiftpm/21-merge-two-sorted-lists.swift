@@ -69,7 +69,7 @@ extension Solution {
         let result = mergeTwoLists(l1, l2)
         print(result!)
 
-        let expected = ListNodeFactory.createList([1,1,2,3,4,4])
-        assert(result == expected)
+        let expectedResult = ListNodeFactory.createList([1,1,2,3,4,4])
+        assert(result == expectedResult)
     }
 }

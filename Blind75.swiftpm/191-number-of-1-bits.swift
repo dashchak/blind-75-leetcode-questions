@@ -86,8 +86,8 @@ extension Solution {
         let result = hammingWeight1(num)
         print(result)
 
-        let expected = 30
-        assert(result == expected)
+        let expectedResult = 30
+        assert(result == expectedResult)
     }
 
     func testHammingWeight2() {
@@ -95,7 +95,7 @@ extension Solution {
         let result = hammingWeight2(num)
         print(result)
 
-        let expected = 3
-        assert(result == expected)
+        let expectedResult = 3
+        assert(result == expectedResult)
     }
 }

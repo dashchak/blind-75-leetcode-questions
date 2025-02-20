@@ -53,6 +53,8 @@ extension Solution {
         let nums = [0,3,7,2,5,8,4,6,0,1]
         let result = longestConsecutive(nums)
         print(result)
-        assert(result == 9)
+
+        let expectedResult = 9
+        assert(result == expectedResult)
     }
 }

@@ -57,7 +57,7 @@ extension Solution {
         let result = findMin(nums)
         print(result)
 
-        let expected = 1
-        assert(result == expected)
+        let expectedResult = 1
+        assert(result == expectedResult)
     }
 }

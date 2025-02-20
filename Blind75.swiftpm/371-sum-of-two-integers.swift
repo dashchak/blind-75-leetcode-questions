@@ -38,6 +38,8 @@ extension Solution {
         let num2 = 991
         let result = getSum(num1, num2)
         print(result)
-        assert(result == 1990)
+
+        let expectedResult = 1990
+        assert(result == expectedResult)
     }
 }

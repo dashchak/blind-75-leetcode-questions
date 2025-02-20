@@ -63,6 +63,8 @@ extension Solution {
         let n = 5
         let result = validTree(n, edges)
         print(result)
-        assert(result == true)
+
+        let expectedResult = true
+        assert(result == expectedResult)
     }
 }

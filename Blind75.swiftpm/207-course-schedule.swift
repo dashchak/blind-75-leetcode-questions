@@ -81,6 +81,8 @@ extension Solution {
         let numCourses = 2
         let result = canFinish(numCourses, prerequisites)
         print(result)
-        assert(result == false)
+
+        let expectedResult = false
+        assert(result == expectedResult)
     }
 }

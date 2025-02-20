@@ -65,7 +65,7 @@ extension Solution {
         let result = search(nums, target)
         print(result)
 
-        let expected = 4
-        assert(result == expected)
+        let expectedResult = 4
+        assert(result == expectedResult)
     }
 }

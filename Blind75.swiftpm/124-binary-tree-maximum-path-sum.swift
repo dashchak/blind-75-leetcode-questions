@@ -53,6 +53,8 @@ extension Solution {
         print(tree)
         let result = maxPathSum(tree)
         print(result)
-        assert(result == 42)
+
+        let expectedResult = 42
+        assert(result == expectedResult)
     }
 }
