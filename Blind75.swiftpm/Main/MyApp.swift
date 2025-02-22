@@ -29,6 +29,10 @@ struct MyApp: App {
         solution.testMaxPathSum()
         solution.testIsSameTree1()
         solution.testIsSameTree2()
+        solution.testMaxDepthMaxDepthBFSIterative()
+        solution.testMaxDepthMaxDepthBFSRecursive()
+        solution.testMaxDepthMaxDepthDFSIterative()
+        solution.testMaxDepthMaxDepthDFSRecursive()
     }
 }
 
