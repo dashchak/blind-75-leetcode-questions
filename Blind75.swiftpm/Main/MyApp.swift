@@ -33,6 +33,8 @@ struct MyApp: App {
         solution.testMaxDepthMaxDepthBFSRecursive()
         solution.testMaxDepthMaxDepthDFSIterative()
         solution.testMaxDepthMaxDepthDFSRecursive()
+        solution.testInvertTreeDFSRecursive()
+        solution.testInvertTreeDFSIterative()
     }
 }
 

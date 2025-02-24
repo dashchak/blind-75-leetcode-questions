@@ -26,6 +26,14 @@ extension TreeNode: CustomStringConvertible {
     }
 }
 
+extension TreeNode: Equatable {
+    public static func == (lhs: TreeNode, rhs: TreeNode) -> Bool {
+        lhs.val == rhs.val
+        && lhs.left == rhs.left
+        && lhs.right == rhs.right
+    }
+}
+
 public func treeString<T>(_ node:T, reversed:Bool=false, isTop:Bool=true, using nodeInfo:(T)->(String,T?,T?)) -> String
 {
     // node value string and sub nodes
